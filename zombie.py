@@ -1,6 +1,3 @@
-"""
-模拟僵尸进程产生
-"""
 
 import os,sys
 
@@ -12,11 +9,11 @@ elif pid == 0:
     sys.exit(2)
 else:
     """
-    os.wait() 处理僵尸进程
+    os.wait() 
     """
     pid,status = os.wait()
     print("pid:",pid)
-    print("statis:",status) # child退出状态*256
+    print("statis:",status) 
 
-    while True:  # 父进程不退出
+    while True:
         pass
